@@ -7,6 +7,8 @@ export const Wrapper = styled.div`
   background: url(${mainImg}) no-repeat center / cover;
   position: relative;
   user-select: none;
+  // ${({ animation }) => !animation && "transform: translateY(100vh);"}
+  // animation: ${({ animation }) => animation} 2s ease-out;
 `;
 
 export const StyledMainText = styled.div`

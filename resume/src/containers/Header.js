@@ -1,11 +1,10 @@
-import react from "react";
 import GnbMenu from "../components/GnbMenu";
 import {
   Container,
   GnbWrapper,
   Logo,
   Wrapper,
-} from "../StyledComponents/StyledHeader";
+} from "../styledComponents/StyledHeader";
 
 const Header = () => {
   return (
@@ -16,9 +15,9 @@ const Header = () => {
         </Logo>
         <GnbWrapper>
           <GnbMenu href="#aboutme" text="ABOUT ME" />
+          <GnbMenu href="#introduce" text="INTRODUCE" />
+          <GnbMenu href="#career" text="CAREER" />
           <GnbMenu href="#skills" text="SKILLS" />
-          <GnbMenu href="#works" text="WORKS" />
-          <GnbMenu href="#contact" text="CONTACT" />
         </GnbWrapper>
       </Container>
     </Wrapper>

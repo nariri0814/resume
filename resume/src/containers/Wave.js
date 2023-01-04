@@ -1,13 +1,45 @@
-import react from "react";
+import { useRef, useState } from "react";
+import { useWindowScrollEvent } from "../hooks/useScrollEvent";
+
 import {
   StyledBottom,
   StyledMainText,
   Wrapper,
-} from "../StyledComponents/StyledWave";
+} from "../styledComponents/StyledWave";
 
 const Wave = () => {
+  const [animation, setAnimation] = useState(true);
+  const areaRef = useRef();
+
+  const handleScrollAnimation = () => {
+    const element = areaRef?.current;
+
+    if (!element || !window) {
+      return false;
+    }
+
+    const { top: elementTop, bottom: elementBottom } =
+      element.getBoundingClientRect();
+
+    if (
+      animation &&
+      elementTop < 0 &&
+      elementBottom > 0 &&
+      elementTop <= window.innerHeight
+    ) {
+      setAnimation(false);
+      window.scrollTo({ top: elementBottom, left: 0, behavior: "smooth" });
+    }
+
+    if (elementBottom < 0 || elementTop === 0) {
+      setAnimation(true);
+    }
+  };
+
+  useWindowScrollEvent(handleScrollAnimation);
+
   return (
-    <Wrapper>
+    <Wrapper ref={areaRef}>
       <StyledMainText>
         <p className="text">Resume</p>
         <p className="text border">Resume</p>

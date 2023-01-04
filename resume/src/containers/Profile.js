@@ -1,30 +1,21 @@
-import react from "react";
-import styled from "styled-components";
-import { StyledWrapper } from "../StyledComponents/StyledComponents";
-
-const Title = styled.div`
-  padding: 100px 0 60px;
-  font-size: 40px;
-  font-weight: 900;
-`;
-const Container = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  border-radius: 20px;
-  padding: 40px;
-`;
+import {
+  StyledContainer,
+  StyledWrapper,
+} from "../styledComponents/StyledComponents";
+import { ImgBox, Title } from "../styledComponents/StyledProfile";
+import myImg from "../img/me.jpg";
 
 const Profile = () => {
   return (
     <StyledWrapper>
       <Title>신나리 | RESUME</Title>
-      <Container>
-        <div className="img">내사진</div>
+      <StyledContainer justify={"space-around"}>
+        <ImgBox>
+          <img src={myImg} alt="ShinNa-ri" />
+        </ImgBox>
         <div>
           <div>
-            <h3>Contact</h3>
+            <h3>Contact📞</h3>
             <p>
               <span>Email.</span> nariri0814@gmail.com
             </p>
@@ -33,14 +24,21 @@ const Profile = () => {
             </p>
           </div>
           <div>
-            <h3>Channel</h3>
+            <h3>Channel💻</h3>
             <p>
-              <span>GitHub.</span>
-              <a href="https://github.com/nariri0814" />
+              <span>GitHub.</span>{" "}
+              <a
+                className="github"
+                href="https://github.com/nariri0814"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span>https://github.com/nariri0814</span>
+              </a>
             </p>
           </div>
         </div>
-      </Container>
+      </StyledContainer>
     </StyledWrapper>
   );
 };
