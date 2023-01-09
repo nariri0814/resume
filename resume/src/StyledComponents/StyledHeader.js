@@ -9,6 +9,8 @@ export const Wrapper = styled.div`
   left: 0;
   z-index: 999;
   user-select: none;
+  font-family: "Cafe24ClassicType-Regular";
+
   a {
     text-decoration: none;
     color: inherit;

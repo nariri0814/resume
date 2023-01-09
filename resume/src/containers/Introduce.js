@@ -7,7 +7,7 @@ import {
 const Introduce = () => {
   return (
     <StyledWrapper>
-      <StyledTitle>Introduce</StyledTitle>
+      <StyledTitle id="introduce">Introduce</StyledTitle>
       <StyledContainer>
         <div>
           안녕하세요:) Node.js, React.js, TypeScript, JavaScript 기반의 1년 차

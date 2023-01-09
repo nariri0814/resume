@@ -17,9 +17,18 @@ const Wrapper = styled.div`
 const GnbMenu = (props) => {
   const { href, text } = props;
 
+  const handleClickMenu = (e) => {
+    console.log(e.target.href.split("#")[1]);
+    const elementTop = document.getElementById(e.target.href.split("#")[1]);
+    console.log(elementTop);
+    window.scrollTo({ top: elementTop, left: 0, behavior: "smooth" });
+  };
+
   return (
     <Wrapper>
-      <a href={href}>{text}</a>
+      <a href={href} onClick={(e) => handleClickMenu(e)}>
+        {text}
+      </a>
     </Wrapper>
   );
 };

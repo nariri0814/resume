@@ -30,8 +30,9 @@ export const StyledWrapper = styled.div`
 export const StyledTitle = styled.div`
   font-size: 30px;
   font-weight: 900;
+  font-family: "Cafe24ClassicType-Regular";
   color: #000647;
-  padding: 50px 10px 10px;
+  padding: 70px 10px 10px;
 `;
 
 export const StyledContainer = styled.div`
