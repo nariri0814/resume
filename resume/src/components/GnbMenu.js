@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const Wrapper = styled.div`
   margin: 0 10px;
-  color: #fff;
+  color: #000647;
   padding: 10px;
   box-sizing: border-box;
   position: relative;
@@ -17,18 +17,9 @@ const Wrapper = styled.div`
 const GnbMenu = (props) => {
   const { href, text } = props;
 
-  const handleClickMenu = (e) => {
-    console.log(e.target.href.split("#")[1]);
-    const elementTop = document.getElementById(e.target.href.split("#")[1]);
-    console.log(elementTop);
-    window.scrollTo({ top: elementTop, left: 0, behavior: "smooth" });
-  };
-
   return (
     <Wrapper>
-      <a href={href} onClick={(e) => handleClickMenu(e)}>
-        {text}
-      </a>
+      <a href={href}>{text}</a>
     </Wrapper>
   );
 };

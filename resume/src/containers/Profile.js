@@ -7,7 +7,7 @@ import myImg from "../img/me.jpg";
 
 const Profile = () => {
   return (
-    <StyledWrapper>
+    <StyledWrapper id="aboutme">
       <Title>신나리 | RESUME</Title>
       <StyledContainer justify={"space-around"}>
         <ImgBox>

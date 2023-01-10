@@ -26,13 +26,14 @@ export const StyledWrapper = styled.div`
     text-decoration: none;
     color: inherit;
   }
+  padding-top: 60px;
 `;
 export const StyledTitle = styled.div`
   font-size: 30px;
   font-weight: 900;
   font-family: "Cafe24ClassicType-Regular";
   color: #000647;
-  padding: 70px 10px 10px;
+  padding: 40px 10px 10px;
 `;
 
 export const StyledContainer = styled.div`

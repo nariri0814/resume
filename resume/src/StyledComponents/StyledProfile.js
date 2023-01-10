@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Title = styled.div`
-  padding: 100px 0 60px;
+  padding: 80px 0 60px;
   font-size: 40px;
   font-weight: 900;
   font-family: "Cafe24ClassicType-Regular";

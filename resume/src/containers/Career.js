@@ -6,7 +6,7 @@ import {
 
 const Career = () => {
   return (
-    <StyledWrapper>
+    <StyledWrapper id="career">
       <StyledTitle>Career</StyledTitle>
       <StyledContainer justify={"space-around"}>
         <div className="company">

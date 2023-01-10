@@ -6,7 +6,7 @@ import {
 
 const Skills = () => {
   return (
-    <StyledWrapper>
+    <StyledWrapper id="skills">
       <StyledTitle>Skills</StyledTitle>
       <StyledContainer>
         <div className="skills">
