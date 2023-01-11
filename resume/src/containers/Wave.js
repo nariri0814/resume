@@ -4,6 +4,7 @@ import { useWindowScrollEvent } from "../hooks/useScrollEvent";
 import {
   StyledBottom,
   StyledMainText,
+  StyledWave,
   Wrapper,
 } from "../styledComponents/StyledWave";
 
@@ -45,6 +46,7 @@ const Wave = () => {
         <p className="text border">Resume</p>
         <p className="small_text">Introduce myself</p>
       </StyledMainText>
+      <StyledWave />
       <StyledBottom>
         <div className="text_box">
           <p>scroll down</p>
