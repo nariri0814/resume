@@ -22,11 +22,16 @@ export const MainWrapper = styled.div`
 export const StyledWrapper = styled.div`
   width: 80%;
   margin: 0 auto;
+  padding-top: 60px;
+
   a {
     text-decoration: none;
     color: inherit;
   }
-  padding-top: 60px;
+
+  .career-text p {
+    margin: 7px 0;
+  }
 `;
 export const StyledTitle = styled.div`
   font-size: 30px;
